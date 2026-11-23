@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Satjoe Sambel Cumi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5EBD8;--surface:#FBF4E6;--ink:#3A1210;--head:#7A1616;--btn:#7A1616;--btn-ink:#F5EBD8;--chili:#C0311E;--leaf:#4C6A2B;--line:#E0CFB0;--band:#7A1616;--band-ink:#F5EBD8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2B0F0D;--surface:#3A1613;--ink:#F5EBD8;--head:#F2BFB0;--btn:#C0311E;--line:#5A2A24;--band:#1D0807;--leaf:#9DBB74;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#2B0F0D;--surface:#3A1613;--ink:#F5EBD8;--head:#F2BFB0;--btn:#C0311E;--line:#5A2A24;--band:#1D0807;--leaf:#9DBB74;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 "Nunito",system-ui,sans-serif}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:"Caveat Brush","Segoe Script",cursive;color:var(--head);font-weight:400;line-height:1.05;margin:0}
+h1{font-size:clamp(3rem,9vw,5.6rem)}
+h2{font-size:clamp(2.2rem,5vw,3.2rem);margin-bottom:.6rem}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--chili);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.25rem}
+header{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
+.brand{display:flex;align-items:center;gap:.6rem;font-family:"Caveat Brush",cursive;font-size:1.9rem;color:var(--head);text-decoration:none}
+.brand img{width:44px;height:44px;border-radius:50%}
+.btn{display:inline-block;background:var(--btn);color:var(--btn-ink);border:0;border-radius:999px;padding:.8rem 1.6rem;font:800 1rem "Nunito",sans-serif;text-decoration:none;cursor:pointer}
+.btn:hover{filter:brightness(1.12)}
+.btn.alt{background:transparent;color:var(--head);border:2px solid var(--head)}
+.actions{display:flex;flex-wrap:wrap;gap:.7rem}
+.hero{display:grid;gap:2rem;padding:1.5rem 0 4rem;align-items:center}
+.hero p{max-width:34ch;font-size:1.15rem;margin:1.2rem 0 1.8rem}
+.photo{position:relative}
+.photo>img{border-radius:28px 28px 120px 28px;width:100%;aspect-ratio:1/.95;object-fit:cover}
+.sticker{position:absolute;left:-6px;bottom:-18px;transform:rotate(-6deg);background:var(--chili);color:#fff;padding:.7rem 1.2rem;border-radius:14px;font-family:"Caveat Brush",cursive;font-size:1.6rem;line-height:1}
+.sticker small{display:block;font:600 .8rem "Nunito",sans-serif}
+.band{background:var(--band);color:var(--band-ink);padding:2.2rem 0}
+.band ul{list-style:none;margin:0;padding:0;display:grid;gap:1.4rem;grid-template-columns:repeat(3,1fr);text-align:center}
+.band svg{width:52px;height:52px;stroke:var(--band-ink);fill:none;stroke-width:1.6;margin:0 auto .4rem}
+.band b{font-weight:800}
+section.block{padding:4.5rem 0}
+.split{display:grid;gap:2.2rem;align-items:center}
+.split img{border-radius:22px}
+.facts{display:grid;gap:1rem;margin-top:1.4rem}
+.facts div{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:1rem 1.2rem}
+.facts b{display:block;color:var(--head)}
+.order{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.card{display:grid;gap:1.6rem}
+.field{display:grid;gap:.3rem;margin-bottom:.9rem}
+.field label{font-weight:800;font-size:.92rem}
+.field input,.field textarea{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:.7rem .9rem}
+.qty{display:flex;align-items:center;gap:.8rem}
+.qty button{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--head);background:transparent;color:var(--head);font-size:1.4rem;cursor:pointer}
+.qty output{min-width:2ch;text-align:center;font-weight:800;font-size:1.2rem}
+.total{display:flex;justify-content:space-between;align-items:baseline;border-top:2px dashed var(--line);margin:1.2rem 0;padding-top:1rem}
+.total strong{font-size:1.6rem;color:var(--head)}
+.note{font-size:.9rem;opacity:.8;margin-top:.8rem}
+footer{padding:2.5rem 0;text-align:center;font-size:.92rem}
+@media(min-width:820px){.hero{grid-template-columns:1.05fr 1fr}.split{grid-template-columns:1fr 1fr}.card{grid-template-columns:1fr 1fr;gap:3rem}.facts{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="brand" href="#top"><img src="logo.jpg" alt="Logo Satjoe">Satjoe</a>
+  <a class="btn" href="#pesan">Pesan</a>
+</header>
+<main id="top">
+<section class="hero">
+  <div>
+    <h1>Pedasnya bikin nagih!</h1>
+    <p>Sambel cumi Satjoe dibuat dari cumi pilihan dan cabai asli, tanpa pengawet. Pedas, gurih, dengan aroma laut yang khas.</p>
+    <div class="actions"><a class="btn" href="#pesan">Pesan sekarang</a><a class="btn alt" href="https://s.shopee.co.id/AUvnPihMZe" target="_blank" rel="noopener">Beli di Shopee</a></div>
+  </div>
+  <div class="photo">
+    <img src="foto-utama.jpg" alt="Sambel Cumi Satjoe dalam toples kaca 180 gram dan semangkuk sambel cumi">
+    <div class="sticker">180 gram<small>berat bersih</small></div>
+  </div>
+</section>
+</main>
+</div>
+
+<div class="band">
+  <div class="wrap">
+    <ul>
+      <li><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4c6 6 8 14 6 22l-6 4-6-4c-2-8 0-16 6-22zM16 32c-2 4-1 8-5 11M22 34c0 4-1 7-3 10M26 34c0 4 1 7 3 10M32 32c2 4 1 8 5 11"/></svg><b>Cumi pilihan</b></li>
+      <li><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 38C22 36 36 24 36 10c4 6 4 16-4 24-6 6-14 6-20 4zM36 10c1-3 3-5 6-6"/></svg><b>Cabai asli</b></li>
+      <li><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 40C8 20 20 8 40 8c0 20-12 32-32 32zM8 40L28 20"/></svg><b>Tanpa pengawet</b></li>
+    </ul>
+  </div>
+</div>
+
+<section class="block">
+  <div class="wrap split">
+    <img src="foto-cerita.jpg" alt="Toples Satjoe dikelilingi cumi segar, cabai, dan bawang">
+    <div>
+      <h2>Cumi segar, cabai pilihan</h2>
+      <p>Perpaduan cumi segar dan cabai pilihan yang menghasilkan rasa pedas gurih dengan aroma laut yang khas. Cocok untuk nasi, mie, atau lauk lainnya.</p>
+      <div class="facts">
+        <div><b>Komposisi</b>Cumi, cabai, bawang, garam, gula, minyak nabati.</div>
+        <div><b>Saran penyajian</b>Nasi hangat, mie, atau lauk lainnya.</div>
+        <div><b>Penyimpanan</b>Simpan di tempat sejuk dan kering. Setelah dibuka, simpan di kulkas.</div>
+        <div><b>Kemasan</b>Toples kaca, berat bersih 180 gram.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block order" id="pesan">
+  <div class="wrap card">
+    <div>
+      <h2>Pesan Satjoe</h2>
+      <p>Isi data di bawah, lalu pesanan Anda terkirim ke WhatsApp kami untuk dikonfirmasi.</p>
+      <div class="field"><label>Jumlah toples</label>
+        <div class="qty"><button type="button" id="min" aria-label="Kurangi">−</button><output id="qty">1</output><button type="button" id="plus" aria-label="Tambah">+</button></div>
+      </div>
+      <div class="total"><span>Total (belum termasuk ongkir)</span><strong id="total"></strong></div>
+    </div>
+    <div>
+      <div class="field"><label for="nama">Nama</label><input id="nama" autocomplete="name"></div>
+      <div class="field"><label for="alamat">Alamat pengiriman</label><textarea id="alamat" rows="3" autocomplete="street-address"></textarea></div>
+      <div class="field"><label for="catatan">Catatan (opsional)</label><input id="catatan"></div>
+      <div class="actions"><button type="button" class="btn" id="kirim">Pesan lewat WhatsApp</button><a class="btn alt" href="https://s.shopee.co.id/AUvnPihMZe" target="_blank" rel="noopener">Beli di Shopee</a></div>
+      <p class="note" id="err" role="alert"></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Satjoe Sambel Cumi · Pedasnya bikin nagih!</div>
+</footer>
+
+<script>
+// Ubah dua nilai ini sesuai toko Anda
+var WA_NUMBER = "6283838475771"; // nomor WhatsApp, format 62…, tanpa + dan tanpa 0 di depan
+var HARGA = 35000;               // harga per toples (rupiah)
+
+var q = 1, qEl = document.getElementById("qty"), tEl = document.getElementById("total");
+function rp(n){ return "Rp " + n.toLocaleString("id-ID"); }
+function render(){ qEl.textContent = q; tEl.textContent = rp(q * HARGA); }
+document.getElementById("min").onclick = function(){ if(q > 1){ q--; render(); } };
+document.getElementById("plus").onclick = function(){ if(q < 99){ q++; render(); } };
+document.getElementById("kirim").onclick = function(){
+  var nama = document.getElementById("nama").value.trim();
+  var alamat = document.getElementById("alamat").value.trim();
+  var cat = document.getElementById("catatan").value.trim();
+  var err = document.getElementById("err");
+  if(!nama || !alamat){ err.textContent = "Isi nama dan alamat pengiriman dulu."; return; }
+  err.textContent = "";
+  var teks = "Halo Satjoe, saya ingin pesan:\n" +
+    "Sambel Cumi Satjoe 180 g × " + q + "\n" +
+    "Total: " + rp(q * HARGA) + "\n\n" +
+    "Nama: " + nama + "\nAlamat: " + alamat + (cat ? "\nCatatan: " + cat : "");
+  window.open("https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(teks), "_blank");
+};
+render();
+</script>
+</body>
+</html>
